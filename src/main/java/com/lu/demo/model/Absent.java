@@ -12,6 +12,6 @@ import java.util.Date;
 public class Absent {
     private Long id;
     private Long userId;
-    private Date date;
+    private String date;
     private String desc;
 }

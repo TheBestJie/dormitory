@@ -26,22 +26,17 @@ class DormitoryApplicationTests {
 
     @Test
     void contextLoads() {
-//        for (int i = 0; i < 1000; i++) {
-//            AdminVO adminVO = new AdminVO();
-//            adminVO.setUserId((long)(100023 + i));
-//            adminVO.setUsername("student"+(23+i));
-//            adminVO.setPassword("123456");
-//            adminVO.setSex("男");
-//            adminVO.setPhone("12345678912");
-//
-//            Integer f = (int) (Math.random()*6);
-//            if(f == 0){
-//                f = 1;
-//            }
-//            adminVO.setFloorId(f);
-//            adminVO.setRoleRank(3);
-//             adminService.insertAdmin(adminVO);
-//        }
+        for (int i = 0; i < 100; i++) {
+            AdminVO adminVO = new AdminVO();
+            adminVO.setUserId((long)(100400 + i));
+            adminVO.setUsername("student"+(400+i));
+            adminVO.setPassword("123456");
+            adminVO.setSex("男");
+            adminVO.setPhone("12345678912");
+            adminVO.setFloorId(5);
+            adminVO.setRoleRank(3);
+             adminService.insertAdmin(adminVO);
+        }
 
 //        List<AbsentVO> adminVOS = absentMapper.selectAbsentAll();
 //        String date = adminVOS.get(0).getDate();
